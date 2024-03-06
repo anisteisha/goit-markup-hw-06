@@ -483,28 +483,98 @@ img {
  
 .main-text {
     color: #434455;
+    /*--*/
+    font-weight: 500;
+    /*--*/
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    max-width: 264px;
+    /*max-width: 264px;*/
+    max-width: 288px;
     
 }
 
 .title-text {
     color: var(--NAVY-BLUE, #2E2F42);
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    font-weight: 700;
     margin-bottom: 8px;
     margin-top: 8px;
+    /*--*/
+    text-align: center;
+
 }
 
 .advant {
     display: flex;
-    gap: 24px;
+    /*--*/
+    flex-wrap: wrap;
+    /*--*/
+    /*gap: 24px;*/
+    gap: 62px;
 }
 
+.section-advant {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.main-advant {
+    /*width: calc((100% - 72px) / 4);*/
+    width: 100%;
+    }
+
+.advant-container {
+    display: none;
+}
+
+/*---Tablet---*/
+@media screen and (min-width: 768px) {
+.section-advant {
+    width: 736px;
+}
+.advant {
+    column-gap: 24px;
+    row-gap: 72px;
+}
+
+.main-advant {
+    width: calc((100% - 24px) / 2);
+    height: 120px;
+}
+
+.title-text {
+    text-align: left;
+}
+
+.main-text {
+    min-width: 356px;
+    font-size: 16px;
+    
+}
+}
+
+/* ---Desktop---*/
+@media screen and (min-width: 1158px) {
+.section-advant {
+    width: 100%;
+    height: 464px;
+    }
+.main-text {
+    min-width: 264px;
+    font-weight: 400;
+}
+.title-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+.main-advant {
+    width: calc((100% - 72px) / 4);
+}
 .advant-container {
     display: flex;
     align-items: center;
@@ -516,16 +586,13 @@ img {
     margin-bottom: 8px;
     border: 1px solid #778899;
 }
-
-.section-advant {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.advant {
+    width: 1128px;
+    flex-wrap: nowrap;
+    gap: 24px;
 }
 
-.main-advant {
-    width: calc((100% - 72px) / 4);
-    }
-
+}
 /*section3*/
 
 .picture {
