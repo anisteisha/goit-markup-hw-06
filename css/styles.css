@@ -1175,7 +1175,8 @@ img {
 .modal-text {
     color:#2E2F42;
     font-weight: 500;
-    width: 360px;
+    /*width: 360px;*/
+    width: 256px;
     height: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -1338,6 +1339,10 @@ margin-bottom: 4px;
     top: 67%;
     right: 50%;
 }
+
+.modal-text {
+    width: 360px;
+}
 }
 
 /* ---Desktop---*/
@@ -1348,4 +1353,8 @@ margin-bottom: 4px;
         top: 50%;
         right: 50%;
     }
+
+.modal-text {
+    width: 360px;
+}
 }
